@@ -1,0 +1,61 @@
+/*рубрики*/
+ul.rubrics{
+    padding:0; 
+    list-style-position:inside;
+}
+li.stolb a {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    padding: 5px;
+    color: #007BC0;
+    font-size: 1.2em;
+    // align-content: center;
+}
+
+li.stolb {
+
+    width: 80%;
+    height: auto;
+    text-decoration: none;
+    padding: 5px;
+    color: #007BC0;
+    border-bottom: 1px solid #E8E8E8;
+    text-align: left;
+    padding-left: 1em;
+    font-size: 16px;
+    align-content: center;
+}
+
+    li.stolb:first-child {
+        border-top: 0px solid #E8E8E8;
+    }
+
+    li.stolb:hover {
+        color: #000;
+        background-color: #F8C301;
+    }
+
+aside#sidebar p {
+    color: red;
+    text-align: center;
+}
+
+details.callMe summary {
+    background-color: #AB1723;
+    color: white;
+    border-radius: 8px;
+}
+
+
+ul.callMeTel>li {
+    margin-top:0.8em;
+}
+
+.callMeText {
+    padding-left: 0.2em;
+}
+
+
+/*end рубрика*/

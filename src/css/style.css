@@ -1,0 +1,661 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0; }
+
+.my_container {
+  width: 100%;
+  margin: 0 auto; }
+
+.my_container .my_cols {
+  float: left;
+  margin: 0 0 0.01em;
+  padding: 0 0 0.01em;
+  text-align: center; }
+
+.my_container .my_cols.my_col-1,
+.my_container .my_cols.my_col-2,
+.my_container .my_cols.my_col-3,
+.my_container .my_cols.my_col-4,
+.my_container .my_cols.my_col-5,
+.my_container .my_cols.my_col-6,
+.my_container .my_cols.my_col-7,
+.my_container .my_cols.my_col-8,
+.my_container .my_cols.my_col-9,
+.my_container .my_cols.my_col-10,
+.my_container .my_cols.my_col-11,
+.my_container .my_cols.my_col-12 {
+  width: 100%; }
+
+/* clear fix  */
+.my_container:before,
+.my_container:after,
+.my_row:before,
+.my_row:after,
+.clear:before,
+.clear:after {
+  content: "";
+  display: table; }
+
+.my_container:after,
+.my_row:after,
+.clear:after {
+  clear: both; }
+
+/* end clear fix */
+body {
+  font: 100%/1.5em Arial, Helvetica, sans-serif;
+  color: #000;
+  font-size: 18px; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+select {
+  font-size: 80%; }
+
+input[type="radio"] {
+  font-size: 60%;
+  margin-top: 0.6em;
+  margin-left: 0.4em; }
+
+.main_information_index {
+  background: red url("../Image/image_myHome.jpg") no-repeat;
+  -moz-background-size: 100%;
+  /* Firefox 3.6+ */
+  -webkit-background-size: 100%;
+  /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%;
+  /* Opera 9.6+ */
+  background-size: 100%;
+  /* Современные браузеры */
+  height: 30em;
+  margin-bottom: 0.1em; }
+
+/*header*/
+.logo {
+  height: 132px; }
+
+.telephone {
+  font-size: 20px;
+  color: #007BC0;
+  padding-top: 10px;
+  padding-right: 12px; }
+
+.front-sections {
+  display: none; }
+
+.new_logo {
+  display: inline-block;
+  background: url("../Image/photoZatishok.png") no-repeat;
+  -moz-background-size: 100%;
+  /* Firefox 3.6+ */
+  -webkit-background-size: 100%;
+  /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%;
+  /* Opera 9.6+ */
+  background-size: 100%;
+  /* Современные браузеры */
+  height: 7.5em;
+  width: 50%;
+  margin-bottom: 0em; }
+
+.new_logo > p {
+  margin-top: 5.2em;
+  color: #067DC1;
+  font-size: 1.1em;
+  text-align: center;
+  font-weight: bold; }
+
+/*end header*/
+/*nav*/
+nav {
+  display: block;
+  margin-top: 0px;
+  background: #449E18;
+  /*#3E4156*/ }
+
+.my-mobile-menu {
+  display: none; }
+
+.menu {
+  display: block;
+  height: 3em;
+  margin: 0; }
+
+.menu li {
+  display: inline-block;
+  position: relative;
+  z-index: 100; }
+
+.menu li:first-child {
+  margin-left: 0; }
+
+.menu li a {
+  font-weight: 600;
+  font-size: 1.3em;
+  text-decoration: none;
+  padding: 0.6em;
+  display: block;
+  color: #ffffff;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s; }
+
+.menu li a:hover, .menu li:hover > a {
+  color: #ffffff;
+  background: #9CA3DA; }
+
+.menu ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  position: absolute;
+  top: 43px;
+  left: 0px;
+  background: #ffffff; }
+
+.menu ul li {
+  display: block;
+  float: none;
+  background: none;
+  margin: 0;
+  padding: 0; }
+
+.menu ul li a {
+  font-size: 12px;
+  font-weight: normal;
+  display: block;
+  color: #797979;
+  border-left: 3px solid #ffffff;
+  background: #ffffff; }
+
+.menu ul li a:hover, .menu ul li:hover > a {
+  background: #f0f0f0;
+  border-left: 3px solid #9CA3DA;
+  color: #797979; }
+
+.menu li:hover > ul {
+  display: block; }
+
+.menu ul ul {
+  left: 149px;
+  top: 0px; }
+
+.mobile-menu {
+  display: none;
+  width: 100%;
+  padding: 0.2em;
+  background: #449E18;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  height: 2em;
+  text-decoration: none; }
+
+.mobile-menu:hover {
+  background: #449E18;
+  color: #ffffff;
+  text-decoration: none; }
+
+a.mobile-menu {
+  text-align: left; }
+
+a.mobile-menu span {
+  margin-right: 1em; }
+
+select.room_type {
+  height: 2.5em; }
+
+select.room_quantity {
+  height: 2.5em; }
+
+select.kategory {
+  height: 2.5em; }
+
+select.house_type {
+  height: 2.5em; }
+
+select.house_part {
+  height: 2.5em; }
+
+.commercial_type {
+  height: 2.5em;
+  /*width: 180px;*/ }
+
+/*end nav*/
+/*sidebar*/
+aside#sidebar {
+  width: auto;
+  height: auto; }
+
+/*заголовок рубрик */
+h2.nameRubrics {
+  text-align: center;
+  font-style: oblique;
+  font-size: 20px;
+  width: 100%;
+  background: #F8C301; }
+
+.inputForRubrics {
+  float: left;
+  width: 11em;
+  margin-left: 27px; }
+
+input[type="number"] {
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  background: #ffffff !important;
+  outline: none;
+  height: 24px;
+  width: 50%;
+  color: #cccccc;
+  font-size: 1em;
+  font-family: Tahoma; }
+
+.mobileButtonSearch {
+  width: 50%;
+  margin-top: 1.5em;
+  background-color: #F8C301;
+  margin-bottom: 1em;
+  height: 35px; }
+
+/*кнопка поиска */
+.buttonSearch {
+  display: none;
+  width: 50px;
+  height: 50px; }
+
+/*end sidebar*/
+/*рубрики*/
+ul.rubrics {
+  padding: 0;
+  list-style-position: inside; }
+
+li.stolb a {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+  padding: 5px;
+  color: #007BC0;
+  font-size: 1.2em; }
+
+li.stolb {
+  width: 80%;
+  height: auto;
+  text-decoration: none;
+  padding: 5px;
+  color: #007BC0;
+  border-bottom: 1px solid #E8E8E8;
+  text-align: left;
+  padding-left: 1em;
+  font-size: 16px;
+  align-content: center; }
+
+li.stolb:first-child {
+  border-top: 0px solid #E8E8E8; }
+
+li.stolb:hover {
+  color: #000;
+  background-color: #F8C301; }
+
+aside#sidebar p {
+  color: red;
+  text-align: center; }
+
+details.callMe summary {
+  background-color: #AB1723;
+  color: white;
+  border-radius: 8px; }
+
+ul.callMeTel > li {
+  margin-top: 0.8em; }
+
+.callMeText {
+  padding-left: 0.2em; }
+
+/*end рубрика*/
+/* поле валют*/
+/*переключатель валют  на форме поиска */
+:checked + span {
+  color: red; }
+
+.nevedimkaRent {
+  display: none;
+  width: 50%; }
+
+:checked + span + input {
+  display: block;
+  margin-left: 1.5em;
+  width: 10em;
+  float: right; }
+
+/*переключатель валют  на форме поиска */
+/*скрытый блок информер валют */
+/*при переключении на значек долара  проявление блока информера */
+a.nevedimka {
+  display: none; }
+
+:checked + a {
+  display: block;
+  float: right;
+  margin-right: 3em;
+  padding-left: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+/*end поле валют*/
+/*footer*/
+.footer-bg {
+  background-color: #3E4156;
+  border: 2px solid #25560D; }
+
+.footer-hg {
+  height: 2.8em; }
+
+.footer-searchId form {
+  margin-top: 0.2em;
+  float: left;
+  text-align: left;
+  padding-left: 1em;
+  width: auto; }
+
+a.footer-icons {
+  width: auto;
+  display: block;
+  float: right;
+  margin-right: 1em;
+  margin-top: 0.3em; }
+
+a.footer-icons img {
+  display: block; }
+
+a.footer-icons:hover {
+  border: 1px solid #FFF;
+  width: auto;
+  float: right;
+  margin-right: 1em; }
+
+.footer-searchId input[type="number"] {
+  width: 40%;
+  font-size: 0.9em; }
+
+.footer-searchId input[type="submit"] {
+  width: 30%;
+  font-size: 0.9em;
+  height: 2.1em; }
+
+.radioTypeText {
+  margin-left: 0.5em; }
+
+@media only screen and (min-width: 280px) and (max-width: 479px) {
+  /*header */
+  .logo {
+    display: none; }
+  .logo_1 img {
+    width: 80%;
+    margin-top: 1em; }
+  .logo_2.new_logo p {
+    display: none; }
+  .new_logo {
+    display: none; }
+  .header-image-bg {
+    background: red url("../Image/image_myHome.jpg") no-repeat;
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%;
+    /* Современные браузеры */
+    height: 10em;
+    margin-bottom: 0em; }
+  .header-searchApartment-bg {
+    background: red url("../Image/apartmFormSearch.jpg") no-repeat;
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%;
+    /* Современные браузеры */
+    height: 14.3em;
+    margin-bottom: 0em; }
+  .header-searchHouse-bg {
+    background: red url("../Image/photo4house.jpg") no-repeat;
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%;
+    /* Современные браузеры */
+    height: 11.9em;
+    margin-bottom: 0em; }
+  .header-searchCommercial-bg {
+    background: red url("../Image/photoComercial.jpg") no-repeat;
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%;
+    /* Современные браузеры */
+    height: 11.9em;
+    margin-bottom: 0em; }
+  .header-searchLand-bg {
+    background: red url("../Image/photo4Land.jpg") no-repeat;
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%;
+    /* Современные браузеры */
+    height: 11em;
+    margin-bottom: 0em; }
+  /*end header*/
+  /*nav*/
+  .menu {
+    display: none; }
+  .mobile-menu {
+    display: block;
+    margin-top: 0em; }
+  .my-mobile-menu li {
+    display: block;
+    margin: 0;
+    text-align: left;
+    padding-left: 0em;
+    padding-top: 1em;
+    text-transform: uppercase; }
+  /*end nav*/
+  /*main*/
+  .main_information_index {
+    display: none; }
+  .no-image-bg {
+    display: none; }
+  .callMe {
+    display: inline;
+    margin: 1em; }
+  .callMe summary {
+    padding: 0.5em; } }
+
+@media only screen and (min-width: 767px) and (max-width: 849px) {
+  .my_container .my_cols.my_col-1 {
+    width: 8.333333333333333%; }
+  .my_container .my_cols.my_col-2 {
+    width: 16.66666666666667%; }
+  .my_container .my_cols.my_col-3 {
+    width: 25%; }
+  .my_container .my_cols.my_col-4 {
+    width: 33.33333333333333%; }
+  .my_container .my_cols.my_col-5 {
+    width: 41.66666666666667%; }
+  .my_container .my_cols.my_col-6 {
+    width: 50%; }
+  .my_container .my_cols.my_col-7 {
+    width: 58.33333333333333%; }
+  .my_container .my_cols.my_col-8 {
+    width: 66.66666666666667%; }
+  .my_container .my_cols.my_col-9 {
+    width: 75%; }
+  .my_container .my_cols.my_col-10 {
+    width: 83.33333333333333%; }
+  .my_container .my_cols.my_col-11 {
+    width: 91.66666666666667%; }
+  .my_container .my_cols.my_col-12 {
+    width: 100%; }
+  /*nav*/
+  .mainWrap {
+    width: 768px; }
+  .menu ul {
+    top: 37px; }
+  .menu li a {
+    font-size: 12px;
+    padding: 8px; }
+  /*end nav*/ }
+
+@media screen and (min-width: 850px) and (max-width: 991px) {
+  .my_container .my_cols.my_col-1 {
+    width: 8.333333333333333%; }
+  .my_container .my_cols.my_col-2 {
+    width: 16.66666666666667%; }
+  .my_container .my_cols.my_col-3 {
+    width: 25%; }
+  .my_container .my_cols.my_col-4 {
+    width: 33.33333333333333%; }
+  .my_container .my_cols.my_col-5 {
+    width: 41.66666666666667%; }
+  .my_container .my_cols.my_col-6 {
+    width: 50%; }
+  .my_container .my_cols.my_col-7 {
+    width: 58.33333333333333%; }
+  .my_container .my_cols.my_col-8 {
+    width: 66.66666666666667%; }
+  .my_container .my_cols.my_col-9 {
+    width: 75%; }
+  .my_container .my_cols.my_col-10 {
+    width: 83.33333333333333%; }
+  .my_container .my_cols.my_col-11 {
+    width: 91.66666666666667%; }
+  .my_container .my_cols.my_col-12 {
+    width: 100%; } }
+
+@media screen and (min-width: 991px) and (max-width: 1023px) {
+  .my_container .my_cols.my_col-1 {
+    width: 8.333333333333333%; }
+  .my_container .my_cols.my_col-2 {
+    width: 16.66666666666667%; }
+  .my_container .my_cols.my_col-3 {
+    width: 25%; }
+  .my_container .my_cols.my_col-4 {
+    width: 33.33333333333333%; }
+  .my_container .my_cols.my_col-5 {
+    width: 41.66666666666667%; }
+  .my_container .my_cols.my_col-6 {
+    width: 50%; }
+  .my_container .my_cols.my_col-7 {
+    width: 58.33333333333333%; }
+  .my_container .my_cols.my_col-8 {
+    width: 66.66666666666667%; }
+  .my_container .my_cols.my_col-9 {
+    width: 75%; }
+  .my_container .my_cols.my_col-10 {
+    width: 83.33333333333333%; }
+  .my_container .my_cols.my_col-11 {
+    width: 91.66666666666667%; }
+  .my_container .my_cols.my_col-12 {
+    width: 100%; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .my_container .my_cols.my_col-1 {
+    width: 8.333333333333333%; }
+  .my_container .my_cols.my_col-2 {
+    width: 16.66666666666667%; }
+  .my_container .my_cols.my_col-3 {
+    width: 25%; }
+  .my_container .my_cols.my_col-4 {
+    width: 33.33333333333333%; }
+  .my_container .my_cols.my_col-5 {
+    width: 41.66666666666667%; }
+  .my_container .my_cols.my_col-6 {
+    width: 50%; }
+  .my_container .my_cols.my_col-7 {
+    width: 58.33333333333333%; }
+  .my_container .my_cols.my_col-8 {
+    width: 66.66666666666667%; }
+  .my_container .my_cols.my_col-9 {
+    width: 75%; }
+  .my_container .my_cols.my_col-10 {
+    width: 83.33333333333333%; }
+  .my_container .my_cols.my_col-11 {
+    width: 91.66666666666667%; }
+  .my_container .my_cols.my_col-12 {
+    width: 100%; } }
+
+@media only screen and (min-width: 1199px) and (max-width: 1379px) {
+  .my_container .my_cols.my_col-1 {
+    width: 8.333333333333333%; }
+  .my_container .my_cols.my_col-2 {
+    width: 16.66666666666667%; }
+  .my_container .my_cols.my_col-3 {
+    width: 25%; }
+  .my_container .my_cols.my_col-4 {
+    width: 33.33333333333333%; }
+  .my_container .my_cols.my_col-5 {
+    width: 41.66666666666667%; }
+  .my_container .my_cols.my_col-6 {
+    width: 50%; }
+  .my_container .my_cols.my_col-7 {
+    width: 58.33333333333333%; }
+  .my_container .my_cols.my_col-8 {
+    width: 66.66666666666667%; }
+  .my_container .my_cols.my_col-9 {
+    width: 75%; }
+  .my_container .my_cols.my_col-10 {
+    width: 83.33333333333333%; }
+  .my_container .my_cols.my_col-11 {
+    width: 91.66666666666667%; }
+  .my_container .my_cols.my_col-12 {
+    width: 100%; }
+  .callMe {
+    display: none; } }
+
+@media only screen and (min-width: 1379px) and (max-width: 1920px) {
+  .my_container .my_cols.my_col-1 {
+    width: 8.333333333333333%; }
+  .my_container .my_cols.my_col-2 {
+    width: 16.66666666666667%; }
+  .my_container .my_cols.my_col-3 {
+    width: 25%; }
+  .my_container .my_cols.my_col-4 {
+    width: 33.33333333333333%; }
+  .my_container .my_cols.my_col-5 {
+    width: 41.66666666666667%; }
+  .my_container .my_cols.my_col-6 {
+    width: 50%; }
+  .my_container .my_cols.my_col-7 {
+    width: 58.33333333333333%; }
+  .my_container .my_cols.my_col-8 {
+    width: 66.66666666666667%; }
+  .my_container .my_cols.my_col-9 {
+    width: 75%; }
+  .my_container .my_cols.my_col-10 {
+    width: 83.33333333333333%; }
+  .my_container .my_cols.my_col-11 {
+    width: 91.66666666666667%; }
+  .my_container .my_cols.my_col-12 {
+    width: 100%; } }

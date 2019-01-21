@@ -1,0 +1,43 @@
+.my_container{
+	width: 100%;
+	margin: 0 auto;
+	// max-width: 1024px;
+}
+
+.my_container .my_cols{
+	float: left;
+	margin: 0 0 0.01em;
+	padding:0 0 0.01em;
+	text-align: center;}
+
+.my_container .my_cols.my_col-1,
+.my_container .my_cols.my_col-2,
+.my_container .my_cols.my_col-3,
+.my_container .my_cols.my_col-4,
+.my_container .my_cols.my_col-5,
+.my_container .my_cols.my_col-6,
+.my_container .my_cols.my_col-7,
+.my_container .my_cols.my_col-8,
+.my_container .my_cols.my_col-9,
+.my_container .my_cols.my_col-10,
+.my_container .my_cols.my_col-11,
+.my_container .my_cols.my_col-12{width: 100%}
+
+
+
+
+/* clear fix  */
+.my_container:before,
+.my_container:after,
+.my_row:before,
+.my_row:after,
+.clear:before,
+.clear:after{
+  content:"";
+  display:table;}
+
+.my_container:after,
+.my_row:after,
+.clear:after{
+  clear: both;}
+/* end clear fix */

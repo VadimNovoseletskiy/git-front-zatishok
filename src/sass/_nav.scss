@@ -1,0 +1,143 @@
+/*nav*/
+nav {
+    display: block;
+    margin-top: 0px;
+    background: #449E18;
+    /*#3E4156*/
+}
+
+.my-mobile-menu {
+    display: none;
+}
+
+.menu {
+    display: block;
+    height:3em;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+}
+
+.menu li:first-child {
+    margin-left: 0;
+}
+
+.menu li a {
+    font-weight: 600;
+    font-size:1.3em;
+    text-decoration: none;
+    padding: 0.6em;
+    // padding-left: 1em;
+    display: block;
+    color: #ffffff;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.menu li a:hover, .menu li:hover > a {
+    color: #ffffff;
+    background: #9CA3DA;
+}
+
+.menu ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    position: absolute;
+    top: 43px;
+    left: 0px;
+    background: #ffffff;
+}
+
+.menu ul li {
+    display: block;
+    float: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li a {
+    font-size: 12px;
+    font-weight: normal;
+    display: block;
+    color: #797979;
+    border-left: 3px solid #ffffff;
+    background: #ffffff;
+}
+
+.menu ul li a:hover, .menu ul li:hover > a {
+    background: #f0f0f0;
+    border-left: 3px solid #9CA3DA;
+    color: #797979;
+}
+
+.menu li:hover > ul {
+    display: block;
+}
+
+.menu ul ul {
+    left: 149px;
+    top: 0px;
+}
+
+.mobile-menu {
+    display: none;
+    width: 100%;
+    padding: 0.2em;
+    background: #449E18;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 2em;
+    text-decoration:none;
+}
+
+.mobile-menu:hover {
+    background: #449E18;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.mobile-menu  {
+    text-align: left;
+}
+
+a.mobile-menu span {
+    margin-right: 1em;
+}
+
+select.room_type {
+    height: 2.5em;
+}
+
+select.room_quantity {
+    height: 2.5em;
+}
+
+select.kategory {
+    height: 2.5em;
+}
+
+select.house_type {
+    height:2.5em;
+}
+
+select.house_part {
+    height:2.5em;
+}
+
+.commercial_type {
+    height: 2.5em;
+    /*width: 180px;*/
+}
+
+/*end nav*/

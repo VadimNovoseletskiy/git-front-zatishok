@@ -1,0 +1,38 @@
+/* поле валют*/
+
+/*переключатель валют  на форме поиска */
+:checked + span {
+    color: red;
+}
+
+.nevedimkaRent {
+    display: none;
+    width:50%;
+}
+
+:checked + span + input {
+    display: block;
+    margin-left: 1.5em;
+    width: 10em;
+    float: right;
+
+}
+
+/*переключатель валют  на форме поиска */
+
+/*скрытый блок информер валют */
+/*при переключении на значек долара  проявление блока информера */
+a.nevedimka {
+    display: none;
+}
+
+:checked + a {
+    display: block;
+    float: right;
+    margin-right: 3em;
+    padding-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*end поле валют*/

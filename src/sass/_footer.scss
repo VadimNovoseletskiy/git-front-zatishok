@@ -1,0 +1,53 @@
+/*footer*/
+.footer-bg {
+    background-color: #3E4156;
+    border: 2px solid #25560D;
+}
+
+.footer-hg {
+    height:2.8em;
+}
+
+.footer-searchId form {
+    margin-top: 0.2em;
+    float: left;
+    text-align: left;
+    padding-left: 1em;
+    width: auto;
+}
+
+
+
+a.footer-icons {
+    width: auto;
+    display: block;
+    float:right;
+    margin-right:1em;
+    margin-top:0.3em;
+}
+a.footer-icons img{
+   
+    display: block;
+    
+}
+
+    a.footer-icons:hover {
+        border: 1px solid #FFF;
+        width: auto;
+        float: right;
+        margin-right: 1em;
+    }
+
+
+.footer-searchId input[type="number"] {
+    width: 40%;
+    font-size: 0.9em;
+}
+
+.footer-searchId input[type="submit"] {
+    width: 30%;
+    font-size: 0.9em;
+    height:2.1em;
+
+    
+}

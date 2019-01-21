@@ -1,0 +1,58 @@
+/*sidebar*/
+aside#sidebar {
+    width: auto;
+    height: auto;
+}
+
+/*заголовок рубрик */
+h2.nameRubrics {
+    text-align: center;
+    font-style: oblique;
+    font-size: 20px;
+    width: 100%;
+    background: #F8C301;
+}
+
+.inputForRubrics{
+    float: left;
+    width: 11em;
+    margin-left: 27px;
+}
+
+input[type="number"] {
+    border: 1px solid #cccccc; //цвет рамки
+    border-radius: 3px; //закругление углов (общее)
+    -webkit-border-radius: 3px; //закругление углов (Google Chrome)
+    -moz-border-radius: 3px; //закругление углов (FireFox)
+    -khtml-border-radius: 3px; //закругление углов (Safari)
+    background: #ffffff !important; // желательно прописывать, так как в Chrome при сохранных данных оно может быть желтым
+    outline: none; // удаляет обводку в браузерах хром(желтая) и сафари(синяя)
+    height: 24px; // высота на свое усмотрение
+    width: 50%; // ширина на свое усмотрение
+    color: #cccccc; //цвет шрифта в обычном состоянии
+    font-size: 1em; // Размер шрифта
+    font-family: Tahoma; // Стиль шрифта
+ }
+
+
+
+.mobileButtonSearch {
+    width: 50%;
+    margin-top: 1.5em;
+    background-color: #F8C301;
+    margin-bottom: 1em;
+    height: 35px;
+}
+/*кнопка поиска */
+.buttonSearch {
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+
+/*end sidebar*/

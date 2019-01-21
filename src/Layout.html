@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>мастер страница</title>
+    <!-- <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" /> -->
+
+    <!-- TODO: -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    
+
+    <!-- @Styles.Render("~/Content/css") -->
+    <!-- @Styles.Render("~/Font-awesome") -->
+
+    <!-- @Scripts.Render("~/bundles/modernizr") -->
+    <!-- @Scripts.Render("~/Scripts/jquery-1.10.2.min.js") -->
+    <!-- @Scripts.Render("~/Scripts/menu.js") -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    
+    <!-- TODO: -->
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    <div class="my_container">
+
+        <!-- header page -->
+        <header>
+            <div class="my_row">
+                <div class="my_cols my_col-3 logo">
+                    <img src="/Image/small_logo.jpg">
+
+
+                </div>
+                <div class="my_cols my_col-6 logo_1">
+                    <a id="touch-menu" class="mobile-menu" href="#"><span><i class="fa fa-align-justify"></i></span>меню</a>
+                    <ul class="my-mobile-menu">
+                        <li class="menu-text"><i class="icon-home"></i>головна</li>
+                        <li class="menu-text">послуги</li>
+                        <li class="menu-text">кредитування</li>
+                        <li class="menu-text">контактна інформація</li>
+                        <li class="menu-text">про нас</li>
+                    </ul>
+                    <img src="/Image/logo_z.jpg">
+                </div>
+                <div class="my_cols my_col-3 logo_2 header-image-bg">
+                    <div class="new_logo">
+                        <p>8(067)-473-11-45</p>
+                    </div>
+                </div>
+            </div>
+        </header>   
+        <!-- end header page-->
+        <!-- новигация  -->
+            <div class="my_row style='height:1em;'">
+               
+
+                <div class="my_cols my_col-12 ">
+                    <nav id="nav">
+                    <ul class="menu">
+                        <li class="menu-text"><a href="">Головна</a> </li>
+                        <li class="menu-text"><a href="">Послуги</a> </li>
+                        <li class="menu-text"><a href="">Кредитування</a> </li>
+                        <li class="menu-text"><a href="">Контактна інформація</a></li>
+                        <li class="menu-text"><a href="">Про Нас</a> </li>
+
+                    </ul>
+                </nav>
+
+                </div>
+            </div>
+        
+        <!--end новигация -->
+        <div class="my_row">
+
+            <main id="main" role="main">
+                <!--сайд бар рубрики -->
+                <div class="my_cols my_col-3">
+                    <details class="callMe">
+                        <summary><span><i class="fa fa-align-justify"></i></span><span class="callMeText">Зателефонувати:</span></summary>
+                            <ul class="callMeTel">
+                                <li><a href="tel:+380674731145"> 0674731145</a></li>
+                                <li><a href="tel:+380933342042"> 0933342042</a></li>
+                                <li><a href="tel:+380679474897"> 0679474897</a></li>
+                                <li><a href="tel:+380984971936"> 0984971936</a></li>
+                            </ul>
+                        
+                    </details>
+                    <aside id="sidebar">
+                        <h2 class="nameRubrics">Розділи:</h2>
+                        <form method="GET" action="/SearchId/Index">
+
+                            <input class="inputForRubrics" type="number" placeholder="код об'яви" name="id" />
+
+                            <input style="float: right; height: 50px; margin-right:1em;" type="image" name="submit" src="../../Image/search.png" value="Пошук">
+
+                        </form>
+                        <ul class="rubrics">
+                            <li class="stolb" style="clear: both;">Квартири</li>
+                            <li class="stolb"> Будинки </li>
+                            <li class="stolb">Комерційна нерухомість </li>
+                            <li class="stolb"> Земельні ділянки</li>
+                        </ul>
+                        <h2 class="nameRubrics">Курси валют</h2>
+                        <p>
+                            <label class="valuta">$</label>
+                            <input class="valuta" type="radio" value="dollar" checked="" name="valuta">
+                            <a class="nevedimka" id="dollar" href="http://finance.i.ua/" target="_blank"><img src="http://f.i.ua/fp11_b15_c0_l1.png" border="0" alt="Курс долара"></a>
+                            <label class="valuta">€</label>
+                            <input class="valuta" type="radio" value="evro" name="valuta">
+                            <a class="nevedimka" id="evro" href="http://finance.i.ua/" target="_blank"><img src="http://f.i.ua/fp13_b15_c2_l1.png" border="0" alt="Курс євро"></a>
+                        </p>
+                    </aside>
+                </div>
+                <div class="my_cols my_col-9 ">
+                    <!--end сайд бар рубрика -->
+                    <!-- @RenderBody() -->
+                    <section class="main_information_index"></section>
+                </div>
+            </main>
+        </div>
+        <div class="my_row footer-bg footer-hg">
+
+            <div class="my_cols my_col-12 footer-searchId">
+
+              
+                <!-- иконки социальные сети -->
+
+                <a  class="footer-icons" href="https://www.facebook.com/ANzatyshok/" target="_blank">
+                    <img  src="/Image/image_fb.jpg" alt="Ми на Facebook" />
+                </a>
+                <!-- end социальные сети-->
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

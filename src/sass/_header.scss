@@ -1,0 +1,41 @@
+
+/*header*/
+
+.logo {
+    height: 132px;
+}
+
+
+
+.telephone {
+    font-size: 20px;
+    color: #007BC0;
+    padding-top: 10px;
+    padding-right: 12px;
+}
+
+.front-sections {
+    display:none;
+}
+.new_logo {
+    display:inline-block;
+    background:  url('../Image/photoZatishok.png') no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    height:7.5em;
+    width:50%;
+    margin-bottom: 0em;
+}
+
+   
+.new_logo > p {
+        margin-top: 5.2em;
+        color: #067DC1;
+        font-size: 1.1em;
+        text-align: center;
+        font-weight:bold;
+    }
+
+/*end header*/

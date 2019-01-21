@@ -1,0 +1,31 @@
+body {
+    font: 100%/1.5em Arial, Helvetica, sans-serif;
+    color: #000;
+    font-size: 18px;
+}
+
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+select {
+    font-size:80%;
+}
+
+input[type="radio"]{
+    font-size: 60%;
+    margin-top:0.6em;
+    margin-left:0.4em;
+}
+
+.main_information_index {
+    background: red url('../Image/image_myHome.jpg') no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    height: 30em;
+    margin-bottom: 0.1em;
+}
